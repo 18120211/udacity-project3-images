@@ -14,4 +14,6 @@ RUN mkdir -p -m 755 /var/run/sshd
 
 RUN mkdir -m 755 /root/.ssh
 
+RUN apt-get install -y curl
+
 CMD /usr/sbin/sshd -D
